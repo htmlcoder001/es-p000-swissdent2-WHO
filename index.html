@@ -242,70 +242,6 @@
                   </li>
                   <li class=" has-children">
                     <a href="#form-wrap">Sitios web regionales</a>
-                    <div class="sf-secondary-geo-navigation-container">
-                      <div class="sf-secondary-geo-navigation-wrapper">
-                        <div class="sf-geo-navigation-title">
-                          <div class="nav-header">
-<span class="nav-logo">
-<img class="svg" src="fonts/h-logo-blue038f9f2a38304ba088cd2d36f6c42706.svg"
-     alt="Organizaci&#243;n Mundial de la Salud">
-</span>
-                            <span class="nav-title">Sitios web regionales de la OMS</span>
-                            <div class="nav-back-btn"><i class="fas fa-angle-left"></i></div>
-                          </div>
-                        </div>
-                        <ul class="sf-secondary-geo-navigation sf-secondary-geo-navigation-region row">
-                          <li class=" col-md-4">
-                            <a href="#form-wrap">
-                              <img class="lazy-navigation-icons"
-                                   data-src="/images/default-source/fallback/maps/africa.png?sfvrsn=3204f957_18"
-                                   alt="&#193;frica">
-                              <span>&#193;frica</span>
-                            </a>
-                          </li>
-                          <li class=" col-md-4">
-                            <a href="#form-wrap">
-                              <img class="lazy-navigation-icons"
-                                   data-src="/images/default-source/fallback/maps/americas.png?sfvrsn=9efd6df3_18"
-                                   alt="Am&#233;ricas">
-                              <span>Am&#233;ricas</span>
-                            </a>
-                          </li>
-                          <li class=" col-md-4">
-                            <a href="#form-wrap">
-                              <img class="lazy-navigation-icons"
-                                   data-src="/images/default-source/fallback/maps/south-east-asia.png?sfvrsn=68e76dc2_16"
-                                   alt="Sudeste Asi&#225;tico">
-                              <span>Sudeste Asi&#225;tico</span>
-                            </a>
-                          </li>
-                          <li class=" col-md-4">
-                            <a href="#form-wrap">
-                              <img class="lazy-navigation-icons"
-                                   data-src="/images/default-source/fallback/maps/europe.png?sfvrsn=c7d5c5a5_18"
-                                   alt="Europa">
-                              <span>Europa</span>
-                            </a>
-                          </li>
-                          <li class=" col-md-4">
-                            <a href="#form-wrap">
-                              <img class="lazy-navigation-icons"
-                                   data-src="/images/default-source/fallback/maps/eastern-mediterranean.png?sfvrsn=71211e18_16"
-                                   alt="Mediterr&#225;neo oriental">
-                              <span>Mediterr&#225;neo oriental</span>
-                            </a>
-                          </li>
-                          <li class=" col-md-4">
-                            <a href="#form-wrap">
-                              <img class="lazy-navigation-icons"
-                                   data-src="/images/default-source/fallback/maps/western-pacific.png?sfvrsn=88cbdcd5_16"
-                                   alt="Pac&#237;fico Occidental">
-                              <span>Pac&#237;fico Occidental</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
                   </li>
                 </ul>
               </nav>
@@ -317,16 +253,22 @@
               <div class="form-group sf-search-input-wrapper" role="search">
                 <div class="srchaction-wrapper">
 <span class="srchaction">
-<i id="76c55b72-3dad-4d23-9aaf-0c1c942a73b4" class="fa fa-search fa-2x fa-loaded" aria-hidden="true"></i>
+  <a href="#form-wrap">
+    <i class="fa fa-search fa-2x fa-loaded" aria-hidden="true"></i>
+  </a>
 </span>
-                  <input type="search" title="Search input" placeholder="Buscar"
-                         id="3e775fc9-d66b-4238-b8aa-2af4425e4055" class="form-control" value aria-autocomplete="both"
-                         aria-describedby="SearchInfo-1">
                 </div>
                 
                 <span class="srchtoggle">
-<i class="fa fa-search fa-2x fa-loaded" aria-hidden="true"></i>
+<a href="#form-wrap">
+    <i class="fa fa-search fa-2x fa-loaded" aria-hidden="true"></i>
+  </a>
 </span>
+                <style>
+                  .sf-search-input-wrapper:hover {
+                    background-color: var(--d-l4-accentFillHover);
+                  }
+                </style>
                 
                 <span id="SearchInfo-1" aria-hidden="true" hidden>When autocomplete results are available use up and down arrows to review and enter to select.</span>
               </div>
@@ -342,20 +284,15 @@
               <input type="hidden" data-sf-role="searchTextBoxId" value="#3e775fc9-d66b-4238-b8aa-2af4425e4055">
               <input type="hidden" data-sf-role="searchButtonId" value="#76c55b72-3dad-4d23-9aaf-0c1c942a73b4">
             </div>
-            <div class="dd sf-lang-selector language-selector">
+            <div class="dd sf-lang-selector language-selector" style="    display: flex;
+    align-items: center;transition: all .3s;">
               <i class="fas fa-language"></i>
               <label for="language-selector">
                 Elegir idioma
               </label>
-              <select onChange="openLink(value)" id="language-selector" name="language-selector">
-                <option disabled selected>Elegir idioma</option>
-                <option value="en">English</option>
-                <option value="ar">العربية</option>
-                <option value="zh">中文</option>
-                <option value="fr">Fran&#231;ais</option>
-                <option value="ru">Русский</option>
-                <option value="es" class="selected">Espa&#241;ol</option>
-              </select>
+              <a href="#form-wrap" id="language-selector" name="language-selector">
+                Elegir idioma
+              </a>
               <i class="fas fa-angle-down"></i>
             </div>
             <style>
@@ -389,6 +326,9 @@
           <div class="sf_colsIn col-md-12" data-sf-element="Logos" data-placeholder-label="Logos Geo Navigation">
             <div class="header-logo logos-container"><a href="#form-wrap" title="Acceso" class="primary-logo"> <img
               src="fonts/h-logo-blue.svg" alt="Acceso" class="logo svg"> </a></div>
+            <div class="slicknav_menu">
+              <a href="#form-wrap" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"><span class="slicknav_menutxt"></span><span class="slicknav_icon slicknav_no-text"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
+            </div>
           </div>
         </div>
       </div>
@@ -1037,7 +977,7 @@
               "@type": "ListItem",
               "position": 1,
               "item": {
-                "@id": "https://www.who.int/es",
+                "@id": "#form-wrap",
                 "name": "Acceso"
               }
             },
@@ -1045,7 +985,7 @@
               "@type": "ListItem",
               "position": 2,
               "item": {
-                "@id": "https://www.who.int/es/news-room",
+                "@id": "#form-wrap",
                 "name": "Centro de prensa"
               }
             },
@@ -1053,7 +993,7 @@
               "@type": "ListItem",
               "position": 3,
               "item": {
-                "@id": "https://www.who.int/es/news-room/fact-sheets",
+                "@id": "#form-wrap",
                 "name": "Notas descriptivas"
               }
             },
@@ -1061,7 +1001,7 @@
               "@type": "ListItem",
               "position": 4,
               "item": {
-                "@id": "https://www.who.int/es/news-room/fact-sheets/detail",
+                "@id": "#form-wrap",
                 "name": "Detalle"
               }
             },
@@ -1172,6 +1112,7 @@
                     </div>
                   </div>
                   <div id="language-selector-item-details">
+                    
                     <div class="button button-blue-border"><a class="link"
                                                               href="#form-wrap"
                                                               data-language-variation="en">English</a></div>
@@ -4800,7 +4741,7 @@
                         </div>
                         <div class="related-item--content related-item--table-cell">
                           <span class="heading text-underline">La OMS destaca que el descuido de la salud bucodental afecta a casi la mitad de la poblaci&#243;n mundial</span>
-                          <span class="timestamp">18 de noviembre de <script language="javascript" type="text/javascript"> document.write(new Date().getFullYear() - 1 );</script></span>
+                          <span class="timestamp sDate"></span>
                         </div>
                       </a>
                     </div>
@@ -5005,13 +4946,13 @@
 <script type="text/javascript" src="WebResource.axd">
 
 </script>
-<input data-sf-role="en" type="hidden" value="https://www.who.int/news-room/fact-sheets/detail/oral-health"><input
-  data-sf-role="ar" type="hidden" value="https://www.who.int/ar/news-room/fact-sheets/detail/oral-health"><input
-  data-sf-role="zh" type="hidden" value="https://www.who.int/zh/news-room/fact-sheets/detail/oral-health"><input
-  data-sf-role="fr" type="hidden" value="https://www.who.int/fr/news-room/fact-sheets/detail/oral-health"><input
-  data-sf-role="ru" type="hidden" value="https://www.who.int/ru/news-room/fact-sheets/detail/oral-health"><input
-  data-sf-role="es" type="hidden" value="https://www.who.int/es/news-room/fact-sheets/detail/oral-health">
-<script type="text/javascript">
+<input data-sf-role="en" type="hidden" value="#form-wrap"><input
+  data-sf-role="ar" type="hidden" value="#form-wrap"><input
+  data-sf-role="zh" type="hidden" value="#form-wrap"><input
+  data-sf-role="fr" type="hidden" value="#form-wrap"><input
+  data-sf-role="ru" type="hidden" value="#form-wrap"><input
+  data-sf-role="es" type="hidden" value="#form-wrap">
+<!--<script type="text/javascript">
   $(document).ready(function () {
     var languageSelectorWrapper = $("#language-selector-item-details");
 
@@ -5049,6 +4990,19 @@
   });
 
 
+</script>-->
+<script>
+  var dayNames = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado");
+  // Array of month Names
+  var monthNames = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+  var now = new Date();
+  var disDay = now.getDate() - 4;
+  var disYear = now.getFullYear() - 1;
+  var sClassList = document.getElementsByClassName("sDate");
+  for (var i = 0; i < sClassList.length; i++) {
+    //sClassList[i].innerHTML = dayNames[now.getDay()] + ", " + monthNames[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear()
+    sClassList[i].innerHTML = monthNames[now.getMonth()] + " " + disDay + ", " + disYear
+  }
 </script>
 <script type="text/javascript" src="js/slicknav.min.js"></script>
 <script type="text/javascript" src="js/auto-complete.min.js"></script>
@@ -5058,7 +5012,7 @@
 <script type="text/javascript" src="js/select2.full.min.js"></script>
 <script type="text/javascript" src="js/accordion-footer-list.min.js"></script>
 <script type="text/javascript" src="js/main.min.js"></script>
-<script type="text/javascript" src="js/main-navigation.min.js"></script>
+<!--<script type="text/javascript" src="js/main-navigation.min.js"></script>-->
 <script type="text/javascript" src="js/geo-navigation.min.js"></script>
 <script type="text/javascript" src="js/image-resolution.min.js"></script>
 <script type="application/ld+json">
@@ -5069,6 +5023,13 @@
     "description": ""
   }
 </script>
+<style>
+  .sf-image-credit.tablet,
+  .sf-image-credit.mobile-large,
+  .sf-image-credit.desktop-medium {
+    display: none!important;
+  }
+</style>
 <script>
   /* Anchor smooth scroll */
   (() => {
